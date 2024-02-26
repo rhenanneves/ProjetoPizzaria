@@ -1,0 +1,205 @@
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos da página */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Estilos da navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(78, 34, 34);
+    box-shadow: 0 2px 4px rgba(93, 32, 32, 0.626);
+    /* Adiciona sombra */
+}
+
+
+.navbar img {
+    max-height: 50px;
+    /* Define a altura máxima da imagem */
+    margin-left: 20px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    /* Remove os marcadores de lista */
+
+}
+
+.navbar nav ul li {
+    margin: 0 10px;
+    /* Adiciona um pouco de espaço entre os itens da lista */
+    cursor: pointer;
+    /* Muda o cursor para indicar que os itens da lista são clicáveis */
+
+}
+
+.letras {
+    position: relative;
+    /* Para que o pseudo-elemento possa ser posicionado em relação a este elemento */
+    text-decoration: none;
+    color: #fd8d3d;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-right: 40px;
+    transition: color 0.3s ease;
+    /* Transição suave para a cor do texto */
+    text-transform: uppercase;
+}
+
+.letras::before {
+    content: '';
+    /* Adiciona um conteúdo vazio */
+    position: absolute;
+    /* Posicionamento absoluto em relação ao elemento pai (.letras) */
+    bottom: -3px;
+    /* Posiciona o quadrado abaixo do texto */
+    left: 0;
+    /* Alinha o quadrado à esquerda */
+    width: 100%;
+    /* Largura igual à largura do elemento pai */
+    height: 3px;
+    /* Altura do quadrado */
+    background-color: transparent;
+    /* Cor inicial transparente */
+    transition: background-color 0.3s ease;
+    /* Transição suave para a cor de fundo */
+}
+
+.letras:hover::before {
+    background-color: rgb(255, 160, 0);
+    /* Cor do quadrado quando o hover é acionado */
+}
+
+.anuncio .container-anuncio {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anuncio .container-anuncio h1 {
+    color: #800000;
+}
+
+.anuncio .container-anuncio h3 {
+    color: white;
+    background-color: #D2691E;
+    width: 290px;
+    height: 30px;
+    margin-left: 500px;
+    border-radius: 5px;
+}
+
+.anuncio .container-anuncio h3:hover {
+    background-color: #a65419;
+    /* Cor do quadrado quando o hover é acionado */
+    transition: color 0.3s ease;
+}
+
+.anuncio .container-anuncio a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* Para evitar que as imagens ultrapassem os limites do contêiner */
+
+}
+
+.imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    padding: 6px;
+}
+
+.imagem img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Para garantir que a imagem não ultrapasse os limites do contêiner */
+    border-radius: 5px;
+    height: 100%;
+    /* Definindo a altura de todas as imagens */
+}
+
+
+.imagem1 {
+    flex-basis: 50%;
+    /* A imagem 1 ocupa 50% do espaço */
+    height: 900px;
+}
+
+.imagem-container {
+    flex-basis: 50%;
+    /* O contêiner das imagens 2 e 3 ocupa 50% do espaço */
+    display: flex;
+    flex-direction: column;
+}
+
+.containerbaixo img{
+    margin-left: 150px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    width: 45%;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: #ffd700; /* Cor quando o hover é acionado */
+}
+
+/* Estilos do iframe */
+iframe {
+    width: 300px;
+    height: 150px;
+    border: none;
+}
